@@ -1,6 +1,7 @@
 /********************************
 *      ДОПОЛНИТЕЛЬНЫЕ СТИЛИ
 *********************************/
+
 //@import "../../bower_components/normalize.css/normalize.css";
 
 @import "partials/sprite";
@@ -10,32 +11,196 @@
 //hover спрайта
 
 
-.icon {
-  @include sprite($icon);
-  &:hover {
-    @include sprite($icon-hover);
+//.icon {
+//  @include sprite($icon);
+//  &:hover {
+//    @include sprite($icon-hover);
+//  }
+//}
+//.nav-mobail{
+//  @include sprite($nav-mobail);
+//  &:hover {
+//    @include sprite($nav-mobail-hover);
+//  }
+//}
+
+
+
+
+@font-face {
+  font-family: 'proxima_nova_ltsemibold';
+  src: url('../fonts/proxima_nova_semibold.eot');
+  src: url('../fonts/proxima_nova_semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proxima_nova_semibold.woff2') format('woff2'),
+  url('../fonts/proxima_nova_semibold.woff') format('woff'),
+  url('../fonts/proxima_nova_semibold.ttf') format('truetype'),
+  url('../fonts/proxima_nova_semibold.svg#proxima_nova_ltsemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.both:after {
+  clear: both;
+  content: "";
+  display: block;
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.h-after{
+  position: relative;
+  border: none;
+  font-size: 36px;
+  text-align: center;
+  padding: 0;
+  margin: -12px 0 85px;
+  &:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    left: 0;
+    top: 56px;
+    background: url('../images/h-after.png') no-repeat center center;
   }
 }
-.nav-mobail{
-  @include sprite($nav-mobail);
-  &:hover {
-    @include sprite($nav-mobail-hover);
+
+.features{
+  width:64%;
+  border-left: 3px solid #6a7c0d;
+  padding: 0 0 42px 4%;
+  strong{
+    font-size: 21px;
+    color: #6a7c0d;
+    padding:0 0 14px;
+    display: inline-block;
+  }
+  ul{
+
+  }
+  li{
+    padding: 13px 0;
+    line-height: 23px;
+
+  }
+}
+.fetures-img{
+  width:31.5%;
+  margin:22px 0 0;
+  img{
+    width:100%;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.what-does{
+  background:  url('../images/mywhat.png') no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width:100%;
+  padding: 113px 0 159px;
+  .h-after{
+    padding:0;
+    margin:0;
+  }
+}
+.width{
+  color: #fff;
+}
+.list-what{
+  margin:60px 0 0;
+ li{
+   position: relative;
+   min-height:114px;
+   text-align: center;
+   hr{
+     width:30px;
+     height:4px;
+     background-color: #f8c300;
+     border: none;
+     text-align: center;
+     display: inline-block;
+   }
+   &:after{
+     clear: both;
+     content: "";
+     display: block;
+     float: none;
+     margin: 0;
+     padding: 0;
+   }
+   &:last-child{
+     &:before{
+       display: none;
+     }
+   }
+ }
+  p{
+    padding: 0 0 0 85px;
+    font-family: 'proxima_nova_ltsemibold';
+    text-align: left;
+  }
+}
+.list{
+  display: inline-block;
+  float: left;
+}
+.companis{
+  background: url('../images/companis.jpg') 55% bottom no-repeat;
+  min-height: 385px;
+  margin: 0 0 38px;
+  p{
+    width:42%;
+    line-height: 24px;
+  }
+  .left{
+    text-align: right;
+  }
+  .right{
+    text-align: left;
+  }
+}
+.numb-list{
+  padding: 22px 0 0;
+  li{
+    min-height: 100%;
+    padding: 0 0 32px;
+  }
+  p{
+    font-family: 'Proxima Nova';
+  }
+}
+.numer{
+  font-family: 'proxima_nova_ltsemibold';
+  font-size: 24px;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  padding:14px 0 0;
+  height:36px;
+}
 
 /********************************
 *       ОСНОВНЫЕ СТИЛИ

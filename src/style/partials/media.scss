@@ -1,3 +1,103 @@
-body{
-  //background-color: yellow;
+
+@media screen and (max-width: 1080px) {
+  .companis{
+    min-height: 450px;
+    background-position: 60% bottom;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .features{
+    width:60%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .companis{
+    min-height: 670px;
+    p{
+      float: none;
+      width:100%;
+      text-align: left!important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 730px) {
+  .h-after{
+    padding: 0 50px;
+    &:after {
+      top: 85px;
+    }
+  }
+  .what-does {
+    padding: 140px 0;
+    .h-after {
+      padding: 0 50px;
+      margin: 0;
+    }
+  }
+
+  .list-what{
+    p {
+      margin: 20px 0;
+    }
+  }
+
+  .companis{
+    min-height: 740px;
+  }
+
+}
+@media screen and (max-width: 630px) {
+  .companis{
+    min-height: 100%;
+    background-image: none;
+    padding:0 15px;
+  }
+  .features{
+    float: none;
+    width:100%;
+  }
+  .fetures-img{
+    float: none;
+    width: 100%;
+    text-align: center;
+    img{
+      width:70%;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 479px) {
+  .h-after{
+    padding: 0;
+    font-size: 22px;
+    &:after {
+      top: 65px;
+    }
+  }
+  .what-does .h-after {
+    padding: 0;
+  }
+
+}
+
+
+@media screen and (max-width: 390px) {
+  .h-after{
+    &:after {
+      width:80%;
+      left: 10%;
+      top:55px;
+    }
+  }
+  .features{
+    padding: 0 0 0 4%;
+    width: 88%;
+  }
+
 }
