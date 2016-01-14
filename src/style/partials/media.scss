@@ -68,13 +68,14 @@
       width:70%;
     }
   }
-
+  .h-after{
+    padding: 0;
+  }
 
 }
 
 @media screen and (max-width: 479px) {
   .h-after{
-    padding: 0;
     font-size: 22px;
     &:after {
       top: 65px;
