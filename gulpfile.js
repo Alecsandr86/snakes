@@ -74,7 +74,15 @@ gulp.task('js:build', function () {
         .pipe(reload({stream: true}));
 });
 
+gulp.task('fincss', function(){
+    gulp.src('./src/*.css')
+        .pipe(gulp.dest('build/'));
+});
+
 gulp.task('style:build', function () {
+    gulp.src('./src/style/*.css')
+        .pipe(gulp.dest(path.build.css));
+
     gulp.src(path.src.style)
         .pipe(sourcemaps.init())
         .pipe(sass({
