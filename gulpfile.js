@@ -69,10 +69,10 @@ gulp.task('js:build', function () {
         .pipe(gulp.dest(path.build.js))
 });
 
-//gulp.task('jquery', function () {
-//    gulp.src('./bower_components/jquery/dist/*.min.js')
-//        .pipe(gulp.dest(path.build.js))
-//});
+gulp.task('jquery', function () {
+    gulp.src('./bower_components/jquery/dist/*.min.js')
+        .pipe(gulp.dest(path.build.js))
+});
 
 gulp.task('fincss', function(){
     gulp.src('./src/*.css')
