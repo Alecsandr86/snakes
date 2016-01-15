@@ -106,8 +106,8 @@ gulp.task('image:build', function () {
             use: [pngquant()],
             interlaced: true
         }))
-        .pipe(gulp.dest(path.build.img))
-        .pipe(reload({stream: true}));
+        .pipe(gulp.dest(path.build.img));
+        //.pipe(reload({stream: true}));
 });
 
 gulp.task('sprite', function () {

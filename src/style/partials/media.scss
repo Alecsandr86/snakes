@@ -1,3 +1,18 @@
+@media screen and(max-width: 1200px){
+  .b-list {
+    margin: 0 0 80px;
+    ul{
+      li{
+        font-size: 15px;
+        margin:50px 0;
+        br{
+          display: none;
+        }
+      }
+    }
+
+  }
+}
 
 @media screen and (max-width: 1080px) {
   .companis{
@@ -19,6 +34,24 @@
       float: none;
       width:100%;
       text-align: left!important;
+    }
+  }
+}
+
+@media screen and (max-width: 780px){
+  .bg-toch{
+    background-image: none;
+  }
+  .b-list{
+    height:100%;
+    margin:0 0 40px;
+    ul{
+      float: none;
+      width:100%;
+      text-align: center!important;
+      li{
+        margin: 30px 0;
+      }
     }
   }
 }
@@ -71,6 +104,37 @@
   .h-after{
     padding: 0;
   }
+  .invest{
+    div{
+      font-variant: normal;
+      width:100%;
+      p{
+        br{
+          display: none;
+        }
+      }
+    }
+    h2 {
+      font-size: 26px;
+    }
+  }
+  .invest-img{
+    text-align: center;
+    img{
+      width:70%;
+    }
+  }
+  .b-snakes-two{
+    p{
+      font-size: 14px;
+      &:before{
+        top:-30px;
+      }
+      &:after{
+        bottom: -10px;
+      }
+    }
+  }
 
 }
 
@@ -85,6 +149,13 @@
     padding: 0;
   }
 
+  .b-snakes-two{
+    height:100%;
+    padding: 165px 0 60px;
+    p{
+      font-size: 13px;
+    }
+  }
 }
 
 @media screen and (max-width: 390px) {
