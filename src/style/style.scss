@@ -49,9 +49,9 @@
 
 
 
-
-
-
+i{
+  display: inline-block;
+}
 .left{
   float: left;
 }
@@ -326,6 +326,160 @@
     }
   }
 }
+
+.b-lebls{
+  text-align: center;
+  ul{
+
+  }
+  li{
+    display: inline-block;
+    width:24%;
+    min-height:270px;
+    vertical-align: top;
+  }
+  p{
+    font-size: 18px;
+    color: #6a7c0d;
+    font-weight: bold;
+    margin: 11px 0 0;
+  }
+}
+
+.profitability-plan{
+  background: url('../images/profitability.png') top  center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 603px;
+  padding: 71px 0 0;
+}
+.min-line{
+  position: relative;
+  border-bottom: none;
+  text-align: center;
+  font-size: 36px;
+  padding: 50px 0 25px;
+  &:after{
+      content: '';
+      width:60px;
+      height:4px;
+      background-color: #f8c300;
+      position: absolute;
+      bottom:0;
+      left:47%;
+    }
+
+}
+.list-plan{
+  padding:6px 0 0;
+  li{
+    display: inline-block;
+    vertical-align: top;
+    width:24%;
+    text-align: center;
+  }
+  p{
+    font-size: 14px;
+    color: #6a7c0d;
+    font-weight: bold;
+    line-height: 23px;
+    margin: 36px 0;
+  }
+}
+.plachka{
+  display: inline-block;
+  color: #6a7c0d;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  span{
+    font-size: 48px;
+    display: inline-block;
+    margin:38px 0 3px;
+  }
+}
+.monthly-plan{
+
+}
+.list-mon-plan{
+  padding: 15px 0 0;
+  li{
+    clear: both;
+    margin: 0 0 43px;
+    &:last-child{
+      margin: 66px 0 0;
+    }
+    >span{
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+      padding: 13px 0 0;
+    }
+  }
+  p{
+    padding:0 0 0 83px;
+    line-height: 24px;
+    span{
+      color: #6a7c0d;
+      font-weight: bold;
+    }
+  }
+}
+
+.h-big{
+  font-size: 36px;
+  border-bottom: 3px solid #f8c70f;
+}
+
+.teble-wr{
+  padding: 19px 0 0;
+  .caption{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 31px;
+  }
+}
+.table{
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  color: #444444;
+  th{
+    background-color: #dfeba1;
+    border: none;
+    border-top: 1px solid #cdda85;
+    border-bottom: 1px solid #cdda85;
+    text-transform: uppercase;
+    padding:16px 51px;
+  }
+  tr{
+    &:nth-child(odd){
+      td{
+          background-color: #ededed;
+        }
+    }
+    td{
+      border:none;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 16px 15px;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /********************************
 *       ОСНОВНЫЕ СТИЛИ

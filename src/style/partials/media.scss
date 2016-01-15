@@ -81,6 +81,42 @@
     min-height: 740px;
   }
 
+  .b-lebls{
+    i{
+      -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+      -o-transform: scale(0.7);
+      transform: scale(0.7);
+    }
+    p{
+      br{
+        display: none;
+      }
+    }
+  }
+
+  .list-plan {
+    li {
+      width: 48%;
+    }
+    .plachka{
+      -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+      -o-transform: scale(0.7);
+      transform: scale(0.7);
+    }
+    p{
+      margin:0;
+      br{
+        display: none;
+      }
+    }
+
+  }
+  .profitability-plan {
+    padding: 71px 0;
+  }
+
 }
 
 @media screen and (max-width: 630px) {
@@ -135,7 +171,26 @@
       }
     }
   }
+  .teble-wr {
+    padding: 19px 0 60px;
+  }
 
+}
+
+@media screen and (max-width: 530px){
+  .b-lebls{
+    li{
+      width: 47%;
+      min-height: 227px;
+    }
+    p{
+      font-size: 14px;
+
+    }
+  }
+  .profitability-plan {
+    padding: 71px 0 115px;
+  }
 }
 
 @media screen and (max-width: 479px) {
