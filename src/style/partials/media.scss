@@ -117,6 +117,19 @@
     padding: 71px 0;
   }
 
+  .table{
+    tr{
+      td{
+        padding: 16px 0;
+      }
+      th{
+        padding: 16px 0;
+      }
+    }
+  }
+
+
+
 }
 
 @media screen and (max-width: 630px) {
@@ -211,6 +224,15 @@
       font-size: 13px;
     }
   }
+
+  .table{
+    tr{
+      th{
+        font-size: 10px;
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 390px) {

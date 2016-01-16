@@ -129,7 +129,7 @@ jQuery(document).ready(function($) {
 				});
 			}
 			
-			$('table').wrap('<div class="table_wrap"></div>');
+			//$('table').wrap('<div class="table_wrap"></div>');
 			
 			if ($(window).width()<961){
 				$("#section5 img").attr("src", "images/crp_mobile.png");
